@@ -6,13 +6,17 @@ public class Movement : MonoBehaviour
 {
 
     Rigidbody rb;
+    AudioSource audioSource;
+
     [SerializeField]
-    float mainUp = 1000;
+    float mainUp = 500;
      [SerializeField]
     float mainRoate = 100;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
+         audioSource.Stop();
     }
 
     void Update()
@@ -25,6 +29,12 @@ public class Movement : MonoBehaviour
     void MovementUp() {
         if (Input.GetKey(KeyCode.Space)) {
           rb.AddRelativeForce(Vector3.up * mainUp * Time.deltaTime);
+          if (!audioSource.isPlaying) {
+          audioSource.Play();
+          }
+        }
+        else {
+             audioSource.Stop();
         }
 
     }
