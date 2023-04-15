@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
-{
+{  
+    [SerializeField] AudioClip mainEngine;
+    [SerializeField] float mainUp = 500;
+    [SerializeField] float mainRoate = 100;
 
     Rigidbody rb;
     AudioSource audioSource;
-
-    [SerializeField]
-    float mainUp = 500;
-     [SerializeField]
-    float mainRoate = 100;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-         audioSource.Stop();
+        audioSource.Stop();
     }
 
     void Update()
@@ -30,7 +28,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space)) {
           rb.AddRelativeForce(Vector3.up * mainUp * Time.deltaTime);
           if (!audioSource.isPlaying) {
-          audioSource.Play();
+          audioSource.PlayOneShot(mainEngine);
           }
         }
         else {
