@@ -8,7 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fly Over.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Fly Over 2.unity
+    guid: 0f61f68c4adbe40788250959a2ef4585
   - enabled: 1
     path: Assets/Scenes/Go Under.unity
-    guid: 34814a28842094c0488805d2c4c1de21
+    guid: b27f51dadfcfe44b1b5bd667ae625998
+  - enabled: 1
+    path: Assets/Scenes/Go Under 2.unity
+    guid: 18a83917df6884d7d8a88e78a83b8f0f
+  - enabled: 1
+    path: Assets/Scenes/Obstacles.unity
+    guid: 00622cde6c93840c79fd87157481e84a
+  - enabled: 1
+    path: Assets/Scenes/Obstacles 2.unity
+    guid: baf38fc4670da460792655bef8059dca
+  - enabled: 1
+    path: Assets/Scenes/Last Level.unity
+    guid: defe883b55e2d4bb2aa05f38e8693a37
+  - enabled: 1
+    path: Assets/Scenes/Finish Screen.unity
+    guid: c58f8737538534f74a6043a06f0193e5
+  - enabled: 0
+    path: Assets/Scenes/Finsih Screen.unity
+    guid: 2fbae7c58feba4a4da4bdca61efee69c
   m_configObjects: {}

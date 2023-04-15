@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Friendly
   - Feul
+  - GameArea
   layers:
   - Default
   - TransparentFX
